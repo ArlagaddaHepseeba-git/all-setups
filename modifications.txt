@@ -1,0 +1,214 @@
+                          Title: Performance Analysis of single stage grid connected solar PV and BES under diverse operating conditions.
+
+
+| Section           | Needed? | Actions                                                           |
+| ----------------- | ------- | ----------------------------------------------------------------- |
+| Title & Abstract  | ✔️      | Refine for clarity & novelty                                      |
+| Keywords          | ❌       | **Add 4–6 keywords** after the abstract                           |
+| Novelty Statement | ❌       | **Add 3–5 bullet points** after Introduction or Abstract          |
+| Figures/Tables    | ✔️      | Ensure each one is high-resolution, captioned, referenced in text |
+| Formatting        | ❌       | Use journal template (IEEE/Elsevier/MDPI format etc.)             |
+| References        | ⚠️      | Update with **recent (2022–2025)** publications, fix format       |
+
+
+ ABSTRACT
+Problems:
+
+Lacks numeric results
+
+Unclear novelty
+
+Fix: Rewrite with 4 clear parts:
+
+Problem (1–2 lines)
+
+Proposed solution (1–2 lines)
+
+Simulation/results summary (2–3 lines, with numbers!)
+
+Novelty points (last line)
+
+✅ Also add 4–6 keywords at the end of abstract.
+
+
+ INTRODUCTION
+Strengths: Good background, strong motivation
+Fixes Needed:
+
+Avoid repetition from abstract.
+
+Add clear objective at the end: e.g.,
+
+"This paper proposes a control strategy for a single-stage solar PV system with battery storage that ensures continuous MPPT operation during LVRT conditions under unbalanced faults, validated by simulation."
+
+Add a bullet list of main contributions:
+
+Novel current reference generation for balanced injection under unbalanced faults
+
+Battery energy storage ensures MPPT under grid faults
+
+Overcurrent protection and voltage regulation via BDDC
+
+Dual MPPT comparison (PSO vs. INC)
+
+Validation under realistic dynamic load
+
+ LITERATURE REVIEW (integrated into Introduction)
+Problems:
+
+Too many unrelated citations
+
+No comparison summary
+
+Fixes:
+
+Make a table comparing your work with 5–6 recent works
+(columns: Ref, Topology, LVRT method, MPPT support, Battery used, Real-time test)
+
+Clearly state how your work improves on each prior work
+
+SYSTEM MODEL & DESIGN
+Strengths: Decent explanations
+Fixes:
+
+Add a clear list of system parameters (PV size, battery specs, filter L/C values)
+
+Use proper symbols and avoid formula clutter
+
+Clarify the PV sizing logic (6.6 kW – why?)
+
+Use IEEE format for equations: number all equations, define symbols right after equations.
+
+✅ Keep: Fig. 3, battery-PV control idea.
+
+ CONTROL STRATEGY
+Fixes:
+
+Break into 4 separate subsections:
+
+A. MPPT Control (PSO & INC)
+
+B. LVRT Reference Current Generation
+
+C. Overcurrent Limiting
+
+D. Grid Synchronization / Reactive Injection
+
+Add flowchart or algorithm diagram for control loop.
+
+Emphasize how battery and control maintain MPPT during sag.
+
+✅ Keep: active/reactive formulas, reactive current logic.
+
+ SIMULATION & RESULTS
+Problems:
+
+No quantitative comparison
+
+PSO/INC not analyzed in depth
+
+No explanation for Fig. numbers
+
+Fixes:
+
+Clearly label each figure (PSO, INC, grid currents, DC-link voltage, battery current, PV power, etc.)
+
+Add a results table comparing PSO vs INC vs traditional MPPT:
+
+MPPT efficiency (%)
+
+Settling time (s)
+
+THD (%)
+
+Overcurrent protection triggered (yes/no)
+
+Explain what each plot proves
+
+Simulate at least:
+
+Balanced fault
+
+Unbalanced fault (e.g., LG or LLG)
+
+Voltage sag/swell
+
+Load variation
+
+CONCLUSION
+Fixes:
+
+Add 3 short paragraphs:
+
+Recap of what was proposed
+
+Key results achieved (numbers!)
+
+Why it's better than others
+
+FUTURE SCOPE
+Add Specificity:
+
+Mention AI/ML control (you already started this)
+
+Suggest:
+
+Using DRL for real-time MPPT
+
+Coordinated multi-inverter LVRT
+
+Smart grid forecasting + MPPT
+
+ REFERENCES
+Problems:
+
+Old (many before 2015)
+
+Inconsistent format
+
+No recent IEEE papers on LVRT+MPPT
+
+Fixes:
+
+Add at least 3–5 papers from 2022–2025
+
+Use Google Scholar or IEEE Xplore
+
+Look for papers with single-stage, LVRT, PSO/AI control
+
+Reformat all in IEEE or Elsevier style
+
+| Addition                               | Required             | Details                                         |
+| -------------------------------------- | -------------------- | ----------------------------------------------- |
+| 🔶 **Comparison Table**                | ✅ Yes                | Table comparing your control vs. existing works |
+| 🔶 **Flowchart or Algorithm Diagram**  | ✅ Yes                | For your control logic                          |
+| 🔶 **System Parameter Table**          | ✅ Yes                | Include PV, inverter, battery, filters, loads   |
+| 🆕 **Experimental Test (if possible)** | Strongly Recommended | Even small dSPACE + PV emulator + load demo     |
+| 🧠 **Novelty Statement**               | ✅ Yes                | Bullets at end of Introduction or Abstract      |
+
+TEMPLATE AND LANGUAGE
+Use journal template: IEEE (TPEL/TIE), Elsevier (SE, IJEPES), MDPI
+
+Use Grammarly Premium or similar tool to remove grammar issues
+
+Define all abbreviations once (LVRT, GSC, MPPT, etc.)
+
+ FINAL DELIVERY PACKAGE CHECKLIST
+ Clean, formatted .docx or LaTeX file
+
+ Source files of all figures (not screenshots)
+
+ All equations numbered
+
+ Proper referencing
+
+ Plagiarism below 10%
+
+ Cover letter to editor
+
+ Summary of contributions
+
+ Suggestion of 3 reviewers (if asked)
+
+
+
